@@ -1,0 +1,10 @@
+﻿Code/db
+Code/simulation
+Code/output_files
+Code/incremental_db
+mp4/db
+mp4/simulation
+mp4/output_files
+mp4/incremental_db
+mp4/bin/rv_load_memory.sh
+*.bak
