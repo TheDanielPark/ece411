@@ -1,0 +1,85 @@
+m255
+K4
+z2
+13
+!s112 1.1
+!i10d 8192
+!i10e 25
+!i10f 100
+cModel Technology
+Z0 d/home/danielp7/ece411/mp1/simulation/modelsim
+vmp1
+Z1 DXx6 sv_std 3 std 0 22 AD7iAPLo6nTIKk<N0eo=D3
+Z2 !s110 1643048759
+!i10b 1
+!s100 IV;dVf@hBao;M09@8>1hH2
+I2lP`6h4aGJl7DGc8ha:4k3
+Z3 VDg1SIo80bB@j0V0VzS_@n1
+!s105 mp1_sv_unit
+S1
+R0
+Z4 w1642823846
+8/home/danielp7/ece411/mp1/setup/hdl/mp1.sv
+F/home/danielp7/ece411/mp1/setup/hdl/mp1.sv
+L0 1
+Z5 OV;L;10.5b;63
+r1
+!s85 0
+31
+Z6 !s108 1643048759.000000
+!s107 /home/danielp7/ece411/mp1/setup/hdl/mp1.sv|
+!s90 -reportprogress|300|-sv|-work|work|+incdir+/home/danielp7/ece411/mp1/setup/hdl|/home/danielp7/ece411/mp1/setup/hdl/mp1.sv|
+!i113 1
+Z7 o-sv -work work
+Z8 !s92 -sv -work work +incdir+/home/danielp7/ece411/mp1/setup/hdl
+Z9 tCvgOpt 0
+vmp1_tb
+R1
+R2
+!i10b 1
+!s100 _GUB^HHYFD<E1CV?i?ATQ3
+IobGmGU6A`BKDOMKID]EMP1
+R3
+!s105 mp1_tb_sv_unit
+S1
+R0
+R4
+8/home/danielp7/ece411/mp1/setup/hvl/mp1_tb.sv
+F/home/danielp7/ece411/mp1/setup/hvl/mp1_tb.sv
+L0 3
+R5
+r1
+!s85 0
+31
+R6
+!s107 /home/danielp7/ece411/mp1/setup/hvl/mp1_tb.sv|
+!s90 -reportprogress|300|-sv|-work|work|+incdir+/home/danielp7/ece411/mp1/setup/hvl|/home/danielp7/ece411/mp1/setup/hvl/mp1_tb.sv|
+!i113 1
+R7
+!s92 -sv -work work +incdir+/home/danielp7/ece411/mp1/setup/hvl
+R9
+vregfile
+R1
+R2
+!i10b 1
+!s100 7@UH7]U;ninf8K57FRFFi1
+I:AF<b3`cPWc2;]jkGB@d02
+R3
+!s105 regfile_sv_unit
+S1
+R0
+R4
+8/home/danielp7/ece411/mp1/setup/hdl/regfile.sv
+F/home/danielp7/ece411/mp1/setup/hdl/regfile.sv
+L0 1
+R5
+r1
+!s85 0
+31
+R6
+!s107 /home/danielp7/ece411/mp1/setup/hdl/regfile.sv|
+!s90 -reportprogress|300|-sv|-work|work|+incdir+/home/danielp7/ece411/mp1/setup/hdl|/home/danielp7/ece411/mp1/setup/hdl/regfile.sv|
+!i113 1
+R7
+R8
+R9

@@ -1,0 +1,127 @@
+# do mp1_run_msim_rtl_verilog.do
+# if {[file exists rtl_work]} {
+# 	vdel -lib rtl_work -all
+# }
+# vlib rtl_work
+# vmap work rtl_work
+# Model Technology ModelSim - Intel FPGA Edition vmap 10.5b Lib Mapping Utility 2016.10 Oct  5 2016
+# vmap work rtl_work 
+# Copying /software/quartus-std-18.1/modelsim_ase/linuxaloem/../modelsim.ini to modelsim.ini
+# Modifying modelsim.ini
+# 
+# vlog -sv -work work +incdir+/home/danielp7/ece411/mp1/setup/hdl {/home/danielp7/ece411/mp1/setup/hdl/regfile.sv}
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 01:45:03 on Jan 23,2022
+# vlog -reportprogress 300 -sv -work work "+incdir+/home/danielp7/ece411/mp1/setup/hdl" /home/danielp7/ece411/mp1/setup/hdl/regfile.sv 
+# -- Compiling module regfile
+# 
+# Top level modules:
+# 	regfile
+# End time: 01:45:03 on Jan 23,2022, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vlog -sv -work work +incdir+/home/danielp7/ece411/mp1/setup/hdl {/home/danielp7/ece411/mp1/setup/hdl/mp1.sv}
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 01:45:03 on Jan 23,2022
+# vlog -reportprogress 300 -sv -work work "+incdir+/home/danielp7/ece411/mp1/setup/hdl" /home/danielp7/ece411/mp1/setup/hdl/mp1.sv 
+# -- Compiling module mp1
+# 
+# Top level modules:
+# 	mp1
+# End time: 01:45:03 on Jan 23,2022, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# 
+# vlog -sv -work work +incdir+/home/danielp7/ece411/mp1/setup/hvl {/home/danielp7/ece411/mp1/setup/hvl/mp1_tb.sv}
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 01:45:03 on Jan 23,2022
+# vlog -reportprogress 300 -sv -work work "+incdir+/home/danielp7/ece411/mp1/setup/hvl" /home/danielp7/ece411/mp1/setup/hvl/mp1_tb.sv 
+# -- Compiling module mp1_tb
+# 
+# Top level modules:
+# 	mp1_tb
+# End time: 01:45:04 on Jan 23,2022, Elapsed time: 0:00:01
+# Errors: 0, Warnings: 0
+# 
+# vsim -t 1ps -L altera_ver -L lpm_ver -L sgate_ver -L altera_mf_ver -L altera_lnsim_ver -L arriaii_hssi_ver -L arriaii_pcie_hip_ver -L arriaii_ver -L rtl_work -L work -voptargs="+acc"  mp1_tb
+# vsim -t 1ps -L altera_ver -L lpm_ver -L sgate_ver -L altera_mf_ver -L altera_lnsim_ver -L arriaii_hssi_ver -L arriaii_pcie_hip_ver -L arriaii_ver -L rtl_work -L work -voptargs=""+acc"" mp1_tb 
+# Start time: 01:45:04 on Jan 23,2022
+# Loading sv_std.std
+# Loading work.mp1_tb
+# Loading work.mp1
+# Loading work.regfile
+# 
+# add wave *
+# view structure
+# .main_pane.structure.interior.cs.body.struct
+# view signals
+# .main_pane.objects.interior.cs.body.tree
+# run -all
+# Starting simulation.
+# reg 01: 00000000
+# reg 02: 00000000
+# reg 03: 00000000
+# reg 04: 00000000
+# reg 05: 00000000
+# reg 06: 00000000
+# reg 07: 00000000
+# reg 08: 00000000
+# reg 09: 00000000
+# reg 0a: 00000000
+# reg 0b: 00000000
+# reg 0c: 00000000
+# reg 0d: 00000000
+# reg 0e: 00000000
+# reg 0f: 00000000
+# reg 10: 00000000
+# reg 11: 00000000
+# reg 12: 00000000
+# reg 13: 00000000
+# reg 14: 00000000
+# reg 15: 00000000
+# reg 16: 00000000
+# reg 17: 00000000
+# reg 18: 00000000
+# reg 19: 00000000
+# reg 1a: 00000000
+# reg 1b: 00000000
+# reg 1c: 00000000
+# reg 1d: 00000000
+# reg 1e: 00000000
+# reg 1f: 00000000
+# Writing to regfile...
+# Wrote to regfile.
+# reg 01: 00000001
+# reg 02: 00000002
+# reg 03: 00000003
+# reg 04: 00000004
+# reg 05: 00000005
+# reg 06: 00000006
+# reg 07: 00000007
+# reg 08: 00000008
+# reg 09: 00000009
+# reg 0a: 0000000a
+# reg 0b: 0000000b
+# reg 0c: 0000000c
+# reg 0d: 0000000d
+# reg 0e: 0000000e
+# reg 0f: 0000000f
+# reg 10: 00000010
+# reg 11: 00000011
+# reg 12: 00000012
+# reg 13: 00000013
+# reg 14: 00000014
+# reg 15: 00000015
+# reg 16: 00000016
+# reg 17: 00000017
+# reg 18: 00000018
+# reg 19: 00000019
+# reg 1a: 0000001a
+# reg 1b: 0000001b
+# reg 1c: 0000001c
+# reg 1d: 0000001d
+# reg 1e: 0000001e
+# reg 1f: 0000001f
+# ** Note: $finish    : /home/danielp7/ece411/mp1/setup/hvl/mp1_tb.sv(64)
+#    Time: 340 ns  Iteration: 0  Instance: /mp1_tb
+# Ending simulation.
+# End time: 01:45:11 on Jan 23,2022, Elapsed time: 0:00:07
+# Errors: 0, Warnings: 0

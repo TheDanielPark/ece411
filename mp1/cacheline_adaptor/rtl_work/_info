@@ -1,0 +1,58 @@
+m255
+K4
+z2
+13
+!s112 1.1
+!i10d 8192
+!i10e 25
+!i10f 100
+cModel Technology
+Z0 d/home/danielp7/ece411/mp1/cacheline_adaptor
+vcacheline_adaptor
+Z1 DXx6 sv_std 3 std 0 22 AD7iAPLo6nTIKk<N0eo=D3
+Z2 !s110 1643088203
+!i10b 1
+!s100 aj[=ZW1kIZFV4zd7K:z;F2
+I]mZNT?T4_O:0CTROMobe:0
+Z3 VDg1SIo80bB@j0V0VzS_@n1
+Z4 !s105 testbench_sv_unit
+S1
+R0
+w1643088195
+8./hvl/../hdl/cacheline_adaptor.sv
+F./hvl/../hdl/cacheline_adaptor.sv
+L0 1
+Z5 OV;L;10.5b;63
+r1
+!s85 0
+31
+Z6 !s108 1643088203.000000
+Z7 !s107 ./hvl/../hdl/cacheline_adaptor.sv|./hvl/testbench.sv|
+Z8 !s90 -sv|-work|work|./hvl/testbench.sv|
+!i113 1
+Z9 o-sv -work work
+Z10 tCvgOpt 0
+vtestbench
+R1
+R2
+!i10b 1
+!s100 >fmUH=BC?>;01[jDJbbcU3
+INzPU;aN>9SGG=mli7lMYZ2
+R3
+R4
+S1
+R0
+w1642823846
+8./hvl/testbench.sv
+F./hvl/testbench.sv
+L0 3
+R5
+r1
+!s85 0
+31
+R6
+R7
+R8
+!i113 1
+R9
+R10

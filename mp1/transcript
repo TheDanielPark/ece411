@@ -1,0 +1,195 @@
+# Loading project mp1_modelsim
+ls
+# cacheline_adaptor
+# cam
+# db
+# doc
+# fifo
+# incremental_db
+# kogge_stone
+# mp1_modelsim.cr.mti
+# mp1_modelsim.mpf
+# mp1_nativelink_simulation.rpt
+# mp1.qpf
+# mp1.qsf
+# MP1_spec.html
+# msim_transcript
+# multiplier
+# output_files
+# README.rst
+# setup
+# simulation
+# transcript
+# work
+cd fifo
+# reading /software/quartus-std-18.1/modelsim_ase/linuxaloem/../modelsim.ini
+# reading modelsim.ini
+do run.do
+# if {[file exists rtl_work]} {
+# 	vdel -lib rtl_work -all
+# }
+# vlib rtl_work
+# vmap work rtl_work
+# Model Technology ModelSim - Intel FPGA Edition vmap 10.5b Lib Mapping Utility 2016.10 Oct  5 2016
+# vmap work rtl_work 
+# Modifying modelsim.ini
+# 
+# vlog -sv -work work  {./include/types.sv}
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 23:28:49 on Jan 24,2022
+# vlog -reportprogress 300 -sv -work work ./include/types.sv 
+# -- Compiling package fifo_types
+# 
+# Top level modules:
+# 	--none--
+# End time: 23:28:49 on Jan 24,2022, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vlog -sv -work work  {./include/fifo_itf.sv}
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 23:28:49 on Jan 24,2022
+# vlog -reportprogress 300 -sv -work work ./include/fifo_itf.sv 
+# -- Compiling interface fifo_itf
+# -- Importing package fifo_types
+# 
+# Top level modules:
+# 	--none--
+# End time: 23:28:50 on Jan 24,2022, Elapsed time: 0:00:01
+# Errors: 0, Warnings: 0
+# vlog -sv -work work  {./grader/grader.sv}
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 23:28:50 on Jan 24,2022
+# vlog -reportprogress 300 -sv -work work ./grader/grader.sv 
+# -- Compiling package grader_sv_unit
+# -- Importing package fifo_types
+# -- Compiling module grader
+# 
+# Top level modules:
+# 	grader
+# End time: 23:28:50 on Jan 24,2022, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vlog -sv -work work  {./hdl/fifo.sv}
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 23:28:50 on Jan 24,2022
+# vlog -reportprogress 300 -sv -work work ./hdl/fifo.sv 
+# -- Compiling package fifo_sv_unit
+# -- Importing package fifo_types
+# -- Compiling module fifo_synch_1r1w
+# 
+# Top level modules:
+# 	fifo_synch_1r1w
+# End time: 23:28:50 on Jan 24,2022, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vlog -sv -work work  {./hvl/top.sv}
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 23:28:50 on Jan 24,2022
+# vlog -reportprogress 300 -sv -work work ./hvl/top.sv 
+# -- Compiling interface fifo_itf
+# -- Importing package fifo_types
+# -- Compiling package top_sv_unit
+# -- Importing package fifo_types
+# -- Compiling module grader
+# -- Compiling module top
+# 
+# Top level modules:
+# 	top
+# End time: 23:28:50 on Jan 24,2022, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vlog -sv -work work  {./hvl/testbench.sv}
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 23:28:50 on Jan 24,2022
+# vlog -reportprogress 300 -sv -work work ./hvl/testbench.sv 
+# -- Compiling package testbench_sv_unit
+# -- Importing package fifo_types
+# -- Compiling module testbench
+# 
+# Top level modules:
+# 	testbench
+# End time: 23:28:50 on Jan 24,2022, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# 
+# vsim -t 1ps -L altera_ver -L lpm_ver -L sgate_ver -L altera_mf_ver -L altera_lnsim_ver -L stratixv_ver -L rtl_work -L work -voptargs="+acc"  top
+# vsim -t 1ps -L altera_ver -L lpm_ver -L sgate_ver -L altera_mf_ver -L altera_lnsim_ver -L stratixv_ver -L rtl_work -L work -voptargs=""+acc"" top 
+# Start time: 23:28:50 on Jan 24,2022
+# Loading sv_std.std
+# Loading work.fifo_types
+# Loading work.top_sv_unit
+# Loading work.top
+# Loading work.fifo_itf
+# Loading work.grader
+# Loading work.testbench_sv_unit
+# Loading work.testbench
+# Loading work.fifo_sv_unit
+# Loading work.fifo_synch_1r1w
+# 
+# view structure
+# .main_pane.structure.interior.cs.body.struct
+# view signals
+# .main_pane.objects.interior.cs.body.tree
+# run -all
+# GDR: Grader Running
+# ** Note: $finish    : include/fifo_itf.sv(20)
+#    Time: 11355 ps  Iteration: 1  Instance: /top/tb
+# 1
+# Break in Task finish at include/fifo_itf.sv line 20
+add wave -position insertpoint  \
+sim:/top/tb/dut/clk_i \
+sim:/top/tb/dut/reset_n_i \
+sim:/top/tb/dut/data_i \
+sim:/top/tb/dut/valid_i \
+sim:/top/tb/dut/ready_o \
+sim:/top/tb/dut/valid_o \
+sim:/top/tb/dut/data_o \
+sim:/top/tb/dut/yumi_i \
+sim:/top/tb/dut/queue \
+sim:/top/tb/dut/read_ptr \
+sim:/top/tb/dut/write_ptr \
+sim:/top/tb/dut/read_ptr_next \
+sim:/top/tb/dut/write_ptr_next \
+sim:/top/tb/dut/empty \
+sim:/top/tb/dut/full \
+sim:/top/tb/dut/ptr_eq \
+sim:/top/tb/dut/sign_match \
+sim:/top/tb/dut/enqueue \
+sim:/top/tb/dut/dequeue \
+sim:/top/tb/dut/output_buffer_r
+restart
+run 10ns
+# GDR: Grader Running
+# WARNING: No extended dataflow license exists
+# WARNING: No extended dataflow license exists
+# Error: invalid command name "::.main_pane.dataflow.interior.cs.body.pw.df.c"
+# Error: invalid command name "::.main_pane.dataflow.interior.cs.body.pw.df.c"
+# Error: invalid command name "::.main_pane.dataflow.interior.cs.body.pw.df.c"
+# Error: invalid command name "::.main_pane.dataflow.interior.cs.body.pw.df.c"
+# Error: invalid command name "::.main_pane.dataflow.interior.cs.body.pw.df.c"
+# Error: invalid command name "::.main_pane.dataflow.interior.cs.body.pw.df.c"
+# Error: invalid command name "::.main_pane.dataflow.interior.cs.body.pw.df.c"
+# Error: invalid command name "::.main_pane.dataflow.interior.cs.body.pw.df.c"
+# Error: invalid command name "::.main_pane.dataflow.interior.cs.body.pw.df.c"
+# Error: invalid command name "::.main_pane.dataflow.interior.cs.body.pw.df.c"
+# Error: invalid command name "::.main_pane.dataflow.interior.cs.body.pw.df.c"
+# Error: invalid command name "::.main_pane.dataflow.interior.cs.body.pw.df.c"
+# Error: invalid command name "::.main_pane.dataflow.interior.cs.body.pw.df.c"
+# Error: invalid command name "::.main_pane.dataflow.interior.cs.body.pw.df.c"
+# Error: invalid command name "::.main_pane.dataflow.interior.cs.body.pw.df.c"
+# Error: invalid command name "::.main_pane.dataflow.interior.cs.body.pw.df.c"
+# Error: invalid command name "::.main_pane.dataflow.interior.cs.body.pw.df.c"
+# Error: invalid command name "::.main_pane.dataflow.interior.cs.body.pw.df.c"
+# Error: invalid command name "::.main_pane.dataflow.interior.cs.body.pw.df.c"
+# Error: invalid command name "::.main_pane.dataflow.interior.cs.body.pw.df.c"
+# Error: invalid command name "::.main_pane.dataflow.interior.cs.body.pw.df.c"
+# Error: invalid command name "::.main_pane.dataflow.interior.cs.body.pw.df.c"
+# Error: invalid command name "::.main_pane.dataflow.interior.cs.body.pw.df.c"
+# Error: invalid command name "::.main_pane.dataflow.interior.cs.body.pw.df.c"
+run 5000 ps
+# ** Note: $finish    : include/fifo_itf.sv(20)
+#    Time: 11355 ps  Iteration: 1  Instance: /top/tb
+# 1
+# Break in Task finish at include/fifo_itf.sv line 20
+# Error: invalid command name "::.main_pane.dataflow.interior.cs.body.pw.df.c"
+restart
+run 5000 ps
+# GDR: Grader Running
+# GDR: Cleaning Up Grading Run...
+# End time: 23:46:58 on Jan 24,2022, Elapsed time: 0:18:08
+# Errors: 25, Warnings: 2
